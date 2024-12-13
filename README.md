@@ -6,3 +6,6 @@
 
 Preface: this is my machine learning course design, the first piece of content is opencv to detect lane lines; the second piece of content is YOLOv5 to recognize various vehicles and traffic lights. 
 The implementation is to add semantic segmentation header on the basis of YOLOv5 target detection, and then trained on Cityscapes dataset, the code reference is TomMo23 link is as follows: TomMao23/multiyolov5: joint detection and semantic segmentation, based on ultralytics/yolov5, (github.com) On this basis, lane detection is added and the radius of curvature of the lane is calculated, while the distance of the vehicle deviating from the center of the lane is calculated, and also the distance of the recognized vehicle from this vehicle can be calculated. The project is mainly divided into two main blocks of content: the traditional method that is opencv through image correction, binarization, image transformation of binarized image gradient threshold filtering and color threshold filtering and then quadratic function fitting to identify the lane lines; the second block of content is the YOLOv5 recognition of a variety of vehicles and traffic lights.
+————————————————
+Code File Description
+line.py:For detecting lane lines
