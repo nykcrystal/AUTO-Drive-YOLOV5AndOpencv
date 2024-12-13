@@ -12,4 +12,19 @@ The implementation is to add semantic segmentation header on the basis of YOLOv5
 Code File Description（代码文件描述）
 line.py:Define a class to receive the characteristics of each line detection（定义一个类来接收每条线路检测的特征）
 
-pip
+pipeline.py:The main functions are perspective transformation, thresholding, lane line detection and finally visualisation of a set of images（主要功能是对一组图像进行透视变换、阈值处理、车道线检测，并最终进行可视化）
+
+processImage.py:
+Read the video and process it frame by frame.
+Perform camera correction, thresholding, and perspective transformation on each frame.
+Lane line detection using sliding window method to determine whether the lane line has changed and correct it.
+Calculate the curvature of the lane and the distance of the vehicle from the centre of the lane and plot this information onto the image.
+Save the processed image as a new video file.
+
+读取视频并进行逐帧处理。
+对每帧图像进行相机矫正、阈值化、透视变换。
+采用滑动窗口方法进行车道线检测，判断车道线是否发生变化并进行修正。
+计算车道的曲率和车辆偏离车道中心的距离，并将这些信息绘制到图像上。
+将处理后的图像保存为新的视频文件。
+
+utils.py:Defines and implements a number of functions for this project（定义和实现了本项目的一些函数）
