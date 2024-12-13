@@ -9,5 +9,7 @@ The implementation is to add semantic segmentation header on the basis of YOLOv5
 
 ————————————————
 
-Code File Description
-line.py:For detecting lane lines
+Code File Description（代码文件描述）
+line.py:Define a class to receive the characteristics of each line detection（定义一个类来接收每条线路检测的特征）
+
+pip
