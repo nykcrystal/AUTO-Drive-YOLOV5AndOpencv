@@ -28,3 +28,5 @@ Save the processed image as a new video file.
 将处理后的图像保存为新的视频文件。
 
 utils.py:Defines and implements a number of functions for this project（定义和实现了本项目的一些函数）
+pipeline.py:input a video and give the line detection otput
+
